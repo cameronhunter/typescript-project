@@ -12,8 +12,9 @@
 -   [Vitest](https://vitest.dev/) configured and ready (`pnpm run test`).
 -   [Prettier](https://prettier.io/) configured and ready (`pnpm run format`).
 -   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
--   Continuous integration configured for pull requests.
--   Continuous deployment configured for automatic package publishing to both npm and Github packages after merging to `main`.
+-   [Github action](https://docs.github.com/en/actions) configured for `pre-merge` which builds and tests the change.
+-   [Github action](https://docs.github.com/en/actions) configured for `post-merge` which builds, tests, versions, and publishes to both npm and Github packages.
+-   [Github action](https://docs.github.com/en/actions) configured for `post-release` which runs tests on the `@latest` version.
 -   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates.
 
 ## Setup
