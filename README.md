@@ -1,7 +1,6 @@
 # `@cameronhunter/typescript-project`
 
 [![npm package](https://img.shields.io/npm/v/%40cameronhunter/typescript-project?logo=npm)](https://www.npmjs.com/package/@cameronhunter/typescript-project)
-[![@latest](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/post-release.yml?logo=npm&label=%40latest)](https://github.com/cameronhunter/typescript-project/actions/workflows/post-release.yml)
 [![main branch status](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/post-merge.yml?logo=github&label=main)](https://github.com/cameronhunter/typescript-project/actions/workflows/post-merge.yml)
 
 > A template repository for creating npm packages using TypeScript
@@ -14,7 +13,6 @@
 -   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
 -   [Github action](https://docs.github.com/en/actions) configured for `pre-merge` which builds and tests the change.
 -   [Github action](https://docs.github.com/en/actions) configured for `post-merge` which builds, tests, versions, and publishes to both npm and Github packages.
--   [Github action](https://docs.github.com/en/actions) configured for `post-release` which runs tests on the `@latest` version.
 -   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates.
 
 ## Setup
