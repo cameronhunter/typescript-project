@@ -25,8 +25,7 @@ jobs:
               id: get-version
               run: |
                   PACKAGE_NAME="$(jq -r .name package.json)"
-                  VERSION="$(npm show ${PACKAGE_NAME}@latest version || echo '0.0.0')"
-                  echo "::set-output name=version::v$VERSION"
+                  echo "version=v$(npm show ${PACKAGE_NAME}@latest version || echo '0.0.0')" >> $GITHUB_OUTPUT
 
             - name: Checking out tag ${{ steps.get-version.outputs.version }}
               if: steps.get-version.outputs.version != 'v0.0.0'
