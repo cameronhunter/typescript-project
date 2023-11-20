@@ -16,7 +16,7 @@ jobs:
                 node-version: [lts, stable]
 
         steps:
-            - uses: actions/checkout@v3
+            - uses: actions/checkout@v4
             - name: Use node ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
@@ -34,7 +34,7 @@ jobs:
         needs: test
         steps:
             - name: Checkout repo
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
 
             - name: Use Node LTS
               uses: actions/setup-node@v4
