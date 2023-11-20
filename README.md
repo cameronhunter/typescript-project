@@ -12,7 +12,7 @@
 -   [Prettier](https://prettier.io/) configured and ready (`pnpm run format`).
 -   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
 -   `pre-merge` [action](https://docs.github.com/en/actions) which builds and tests the change. It will also auto-merge @dependabot changes.
--   `post-merge` [action](https://docs.github.com/en/actions) which versions and publishes to both npm and Github packages.
+-   `post-merge` [action](https://docs.github.com/en/actions) which versions and publishes to both npm and Github packages along with generated changelogs.
 -   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates. These will be auto-merged if they pass verification steps.
 -   Automatically add your Github username as the scope for unscoped npm packages.
 
