@@ -6,4 +6,36 @@
 
 > A template repository for creating npm packages using TypeScript
 
-Don't forget to add an `NPM_TOKEN` repository secret: https://github.com/cameronhunter/typescript-project/settings/secrets/actions
+## Setup
+
+### Repository Settings
+
+#### General Settings
+
+[] Turn off wikis and projects
+[] Turn off merge commits and rebase merging
+[] Set the default commit message for squash to be "pull request title and description".
+[] Turn on "Always suggest updating pull request branches"
+[] Turn on "Allow auto-merge"
+[] Turn on "Automatically delete head branches"
+
+#### Branches
+
+[] Protect `main` branch
+[] Turn on "Require status checks to pass before merging"
+[] Turn on "Require branches to be up to date before merging"
+
+#### Actions
+
+[] Set Workflow Permissions to "Read and write permissions"
+[] Turn on "Allow GitHub Actions to create and approve pull requests"
+
+#### Secrets and variables
+
+[] Add an `NPM_TOKEN` repository secret: https://github.com/cameronhunter/typescript-project/settings/secrets/actions
+
+### Files
+
+[] Replace `typescript-project` across the project.
+[] Remove `private: true` from `package.json`
+[] Add a `description` to `package.json`
