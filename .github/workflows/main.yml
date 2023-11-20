@@ -7,6 +7,23 @@ on:
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
+    build:
+      name: Build
+      runs-on: ubuntu-latest
+      steps:
+          - uses: actions/checkout@v4
+
+          - name: Use Node LTS
+            uses: actions/setup-node@v4
+            with:
+                node-version: lts/*
+
+          - name: Install dependencies
+            run: corepack enable && pnpm install --frozen-lockfile
+
+          - name: Build package
+            run: pnpm run build
+
     test:
         name: Test Suite
         runs-on: ubuntu-latest
@@ -17,7 +34,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
-            - name: Use node ${{ matrix.node-version }}
+            - name: Use Node ${{ matrix.node-version }}
               uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
