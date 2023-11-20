@@ -6,6 +6,16 @@
 
 > A template repository for creating npm packages using TypeScript
 
+## Features
+
+-   [TypeScript](https://www.typescriptlang.org/) configured and ready (`pnpm run build`).
+-   [Jest](https://jestjs.io/) configured and ready with TypeScript support (`pnpm run test`).
+-   [Prettier](https://prettier.io/) configured and ready (`pnpm run format`).
+-   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
+-   Continuous integration configured for pull requests.
+-   Continuous deployment configured for automatic package publishing when merging to `main`.
+-   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates.
+
 ## Setup
 
 ### Repository Settings
