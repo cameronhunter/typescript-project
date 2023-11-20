@@ -29,21 +29,21 @@ jobs:
                   echo "::set-output name=version::v$VERSION"
 
             - name: Checking out tag ${{ steps.get-version.outputs.version }}
-              if: steps.get-version.outputs.version != '0.0.0'
+              if: steps.get-version.outputs.version != 'v0.0.0'
               uses: actions/checkout@v3
               with:
                   ref: ${{ steps.get-version.outputs.version }}
 
             - name: Use Node ${{ matrix.node-version }}
-              if: steps.get-version.outputs.version != '0.0.0'
+              if: steps.get-version.outputs.version != 'v0.0.0'
               uses: actions/setup-node@v3
               with:
                   node-version: ${{ matrix.node-version }}
 
             - name: Install dependencies
-              if: steps.get-version.outputs.version != '0.0.0'
+              if: steps.get-version.outputs.version != 'v0.0.0'
               run: corepack enable && pnpm install --frozen-lockfile
 
             - name: Run test suite
-              if: steps.get-version.outputs.version != '0.0.0'
+              if: steps.get-version.outputs.version != 'v0.0.0'
               run: pnpm run test
