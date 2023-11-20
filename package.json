@@ -24,6 +24,7 @@
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
   "license": "MIT",
   "devDependencies": {
+    "@cameronhunter/prettier-config": "^4.0.0",
     "@changesets/cli": "^2.26.2",
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",
@@ -35,5 +36,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "packageManager": "pnpm@8.10.5"
+  "packageManager": "pnpm@8.10.5",
+  "prettier": "@cameronhunter/prettier-config"
 }
