@@ -9,7 +9,7 @@
 ## Features
 
 -   [TypeScript](https://www.typescriptlang.org/) configured and ready (`pnpm run build`).
--   [Jest](https://jestjs.io/) configured and ready with TypeScript support (`pnpm run test`).
+-   [Vitest](https://vitest.dev/) configured and ready (`pnpm run test`).
 -   [Prettier](https://prettier.io/) configured and ready (`pnpm run format`).
 -   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
 -   Continuous integration configured for pull requests.
