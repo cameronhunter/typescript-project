@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "name": "@cameronhunter/typescript-project",
+  "version": "0.0.0",
+  "description": "A template repository for creating npm packages using TypeScript",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "format": "prettier --write .",
+    "test": "jest",
+    "release": "pnpm run build && pnpm run publish:github && pnpm run publish:npm",
+    "publish:github": "npm_config_registry=https://npm.pkg.github.com/ pnpm changeset publish",
+    "publish:npm": "npm_config_registry=https://registry.npmjs.org/ pnpm changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cameronhunter/typescript-project.git"
+  },
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "keywords": [],
+  "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@tsconfig/node-lts": "^18.12.5",
+    "@tsconfig/strictest": "^2.0.2",
+    "@types/jest": "^29.5.8",
+    "@types/node": "^20",
+    "jest": "^29.7.0",
+    "prettier": "^3.1.0",
+    "prettier-2": "npm:prettier@^2",
+    "ts-jest": "^29.1.1",
+    "typescript": "5.2.2"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.10.5"
+}
