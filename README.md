@@ -1,8 +1,8 @@
 # `@cameronhunter/typescript-project`
 
 [![npm package](https://img.shields.io/npm/v/%40cameronhunter/typescript-project?logo=npm)](https://www.npmjs.com/package/@cameronhunter/typescript-project)
-[![@latest](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/latest.yml?logo=npm&label=%40latest)](https://github.com/cameronhunter/typescript-project/actions/workflows/latest.yml)
-[![main branch status](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/main.yml?logo=github&label=main)](https://github.com/cameronhunter/typescript-project/actions/workflows/main.yml)
+[![@latest](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/post-release.yml?logo=npm&label=%40latest)](https://github.com/cameronhunter/typescript-project/actions/workflows/post-release.yml)
+[![main branch status](https://img.shields.io/github/actions/workflow/status/cameronhunter/typescript-project/post-merge.yml?logo=github&label=main)](https://github.com/cameronhunter/typescript-project/actions/workflows/post-merge.yml)
 
 > A template repository for creating npm packages using TypeScript
 
