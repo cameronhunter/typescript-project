@@ -7,9 +7,12 @@
     "build": "tsc -p ./tsconfig.build.json",
     "format": "prettier --write .",
     "test": "vitest --passWithNoTests",
-    "release": "pnpm run build && pnpm run publish:github && pnpm run publish:npm",
-    "publish:github": "npm_config_registry=https://npm.pkg.github.com/ pnpm changeset publish",
-    "publish:npm": "npm_config_registry=https://registry.npmjs.org/ pnpm changeset publish"
+    "//": "Github publish needs to be last because we might rewrite the name property to include the scope",
+    "release": "pnpm run build && pnpm run publish:npm && pnpm run publish:github",
+    "publish:npm": "npm_config_registry=https://registry.npmjs.org/ pnpm changeset publish",
+    "publish:github": "pnpm run github:set_scope && npm_config_registry=https://npm.pkg.github.com/ pnpm changeset publish",
+    "//": "If the package isn't alreay scoped, we'll automatically rename it to include the Github username as the scope.",
+    "github:set_scope": "jq --arg githubScope \"$GITHUB_REPOSITORY_OWNER\" '.name |= (if (index(\"@\") == null) then \"@\" + $githubScope + \"/\" + . else . end)' package.json > package-github.json && mv package-github.json package.json"
   },
   "repository": {
     "type": "git",

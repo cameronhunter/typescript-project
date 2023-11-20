@@ -14,6 +14,7 @@
 -   `pre-merge` [action](https://docs.github.com/en/actions) which builds and tests the change. It will also auto-merge @dependabot changes.
 -   `post-merge` [action](https://docs.github.com/en/actions) which versions and publishes to both npm and Github packages.
 -   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates. These will be auto-merged if they pass verification steps.
+-   Automatically add your Github username as the scope for unscoped npm packages.
 
 ## Setup
 
