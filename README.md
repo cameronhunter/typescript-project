@@ -13,7 +13,7 @@
 -   [Prettier](https://prettier.io/) configured and ready (`pnpm run format`).
 -   [Changesets](https://github.com/changesets/changesets) configured and ready (`pnpm changeset`) for versioning.
 -   Continuous integration configured for pull requests.
--   Continuous deployment configured for automatic package publishing when merging to `main`.
+-   Continuous deployment configured for automatic package publishing to both npm and Github packages after merging to `main`.
 -   [Dependabot](https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/about-dependabot-version-updates) configured for automatic package updates.
 
 ## Setup
