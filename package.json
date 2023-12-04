@@ -28,7 +28,7 @@
   "license": "MIT",
   "devDependencies": {
     "@cameronhunter/prettier-config": "^5.0.0",
-    "@changesets/cli": "^2.26.2",
+    "@changesets/cli": "^2.27.1",
     "@tsconfig/node-lts": "^18.12.5",
     "@tsconfig/strictest": "^2.0.2",
     "@types/node": "^20",
