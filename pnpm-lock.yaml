@@ -7,7 +7,7 @@ settings:
 devDependencies:
   '@cameronhunter/prettier-config':
     specifier: ^5.0.0
-    version: 5.0.0(prettier@3.1.0)
+    version: 5.0.0(prettier@3.1.1)
   '@changesets/cli':
     specifier: ^2.26.2
     version: 2.26.2
@@ -21,8 +21,8 @@ devDependencies:
     specifier: ^20
     version: 20.9.2
   prettier:
-    specifier: ^3.1.0
-    version: 3.1.0
+    specifier: ^3.1.1
+    version: 3.1.1
   typescript:
     specifier: 5.3.2
     version: 5.3.2
@@ -61,12 +61,12 @@ packages:
       regenerator-runtime: 0.14.0
     dev: true
 
-  /@cameronhunter/prettier-config@5.0.0(prettier@3.1.0):
+  /@cameronhunter/prettier-config@5.0.0(prettier@3.1.1):
     resolution: {integrity: sha512-Xj5UK7NeqN4Dha4r1ua/23E98wnjFg3swcEAi4TkFsaxE1w0Ks2vMSSitXDH4iX1mOlqS2oSFsB57GpYIgk7iw==}
     peerDependencies:
       prettier: '>=2'
     dependencies:
-      prettier: 3.1.0
+      prettier: 3.1.1
     dev: true
 
   /@changesets/apply-release-plan@6.1.4:
@@ -1916,8 +1916,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.1.0:
-    resolution: {integrity: sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==}
+  /prettier@3.1.1:
+    resolution: {integrity: sha512-22UbSzg8luF4UuZtzgiUOfcGM8s4tjBv6dJRT7j275NXsy2jb4aJa4NNveul5x4eqlF1wuhuR2RElK71RvmVaw==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
